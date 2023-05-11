@@ -131,10 +131,8 @@ fs.readFile(path.join(__dirname, 'template.html'), {encoding: 'utf-8'}, (err, da
                                         console.log(err);
                                     }
                                 })
-                                change = '';
-                            } else {
-                                change = change.replace('{{' + fileName + '}}', data);
-                            }
+                            } 
+                            change = change.replace('{{' + fileName + '}}', data);
                         }
                     });
                 })
